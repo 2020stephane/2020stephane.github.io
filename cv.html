@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html>
-<!-- -->
+
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="cv.css" />
         <title>LE SITE DE STEPHANE</title>
     </head>
-<!-- -->
+
     <body>
-        <!-- -->
+        <div id ="bloc_page">
         <header>
-            <h1>la programmation</h1>
-            <h3 id="hautpage"></h3>
+            <a id="hautpage"></a>
+            <div id="logo">
+                <img src="images/moon1.jpg" alt="Logo de la lune" />
+            </div>
+            <div>
+                <h1>Curriculum vitae</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li id="actif"><a href="cv.html">CV</a></li>
+                    <li id="actif"><a href="index.html">Accueil</a></li>
+                    <li><a href="cv.html">CV</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <!-- -->
-        <section>
-           <div id="canvas">
-           <canvas id="dessin" width="1500" height="200"></canvas>
+
+
+           <div id="entete">
+               <h5> stephane BRISSE</h5>
+               <h5> Tél  : 06 73 00 71 86</h5>
+               <h5> Mail : stephanebrisse@gmail.com</h5>
+               <h5> Web  : http://2020stephane.github.io</h5>
            </div>
-           <script src="index3.js" async=""></script>
-           <div id="hautgauche">
-               <p> stephane BRISSE</p>
-               <p> Tél  : 06 73 00 71 86</p>
-               <p> Mail : stephanebrisse@gmail.com</p>
-               <p> Web  : http://2020stephane.github.io</p>
-           </div>
-           <div id="hautdroite">
+           <div id="titre">
                <h1>Developpeur JAVA</h1>
            </div>
-            <h1>COMPETENCES</h1>
-            <p>Technicien réseau</p>
-            <h2>EXPERIENCES PROFESSIONNELLES</h2>
-            <p>2011 Deploiement de 700 postes au conseil général de l'Herault.</p>
-            <p>2001-2002 Technicien à Norba Martinasso (34)</p>
-            <p>1999-2000 Déploiement de 300 postes crédit agricole de l'Aveyron.</p>
-            <p>1999 Déploiement de 500 postes au CNES de Toulouse.</p>
-            <p>1997-1999 Technicien réseau pour ADI à Montpellier.</p>
-            <p>1993-1996 Technico-commercial à Montpellier pour Logilux,AGC et Itex.</p>
-            <p>1991-1993 Animateur dans l'Hérault (centre social,VVF,centre aéré,....</p>
-            <p>1989-1991 Manutentionnaire pour Manpower à Montpellier.</p>
-            <h3>FORMATIONS</h3>
-            <p>1999 Certification Microsoft Windows NT Server.</p>
-            <p>1998 BTS maintenance et service informatique à l'AFPA d'Istres.</p>
-            <p>1991 BAFA à l'UFCV de Montpellier.</p>
-            <p>1989 Bac D à Douala au Cameroun</p>
-            <h4>CENTRES D'INTERETS</h4>
 
+        <section>
+           <article>
+               <div id="competences">
+                   <h3>COMPETENCES</h3>
+                   <p>Technicien réseau</p>
+               </div>
+               <div>
+                   <h3>EXPERIENCES PROFESSIONNELLES</h3>
+                   <p>2011 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deploiement de 700 postes au conseil général de l'Herault.</p>
+                   <p>2001-2002 Technicien à Norba Martinasso (34)</p>
+                   <p>1999-2000 Déploiement de 300 postes crédit agricole de l'Aveyron.</p>
+                   <p>1999 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Déploiement de 500 postes au CNES de Toulouse.</p>
+                   <p>1997-1999 Technicien réseau pour ADI à Montpellier.</p>
+                   <p>1993-1996 Technico-commercial à Montpellier pour Logilux,AGC et Itex.</p>
+                   <p>1991-1993 Animateur dans l'Hérault (centre social,VVF,centre aéré,....)</p>
+                   <p>1989-1991 Manutentionnaire pour Manpower à Montpellier.</p>
+               </div>
+               <div>
+                   <h3>FORMATIONS</h3>
+                   <p>1999 Certification Microsoft Windows NT Server.</p>
+                   <p>1998 BTS maintenance et service informatique à l'AFPA d'Istres.</p>
+                   <p>1991 BAFA à l'UFCV de Montpellier.</p>
+                   <p>1989 Bac D à Douala au Cameroun</p>
+               </div>
+               <div>
+                   <h3>CENTRES D'INTERETS</h3>
+               </div>
+           </article>
+            <aside>
+                <h1>Centre d'interets</h1>
+                <img src="images/bulle.png" alt="" id="fleche_bulle" />
+                <p id="photo_zozor"><img src="images/moon1.jpg" alt="Photo de la lune" /></p>
+                <p>J'adore la mer et je suis passionné de chasse sous marine.<BR>Dés que j'ai l'occasion je prends mon équipement et je part chasser la daurade.</p>
+                <p>Je suis aussi fan d'astronomie,je possede un telescope newton 150/750.</p>
+                <p>J'ai pris la photo ci-dessus avec mon télephone,f/1.79 1/33 iso446.</p>
+                <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" /></p>
+            </aside>
         </section>
         <footer>
             <div id="logo_footer">
@@ -61,5 +82,6 @@
             </div>
             <h3>&copy;Stéphane Brisse - 2020</h3>
         </footer>
+        </div>
     </body>
 </html>

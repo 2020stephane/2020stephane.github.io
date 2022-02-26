@@ -25,13 +25,14 @@ header
 }
 header h1
 {
-    font-size: 2.5em;
-    font-weight: normal;
-    margin-left : 150px;
+   width: 300px;
+       font-size: 2.5em;
+       font-weight: normal;
+       margin-left : 325px;
 }
 header nav
 {
-    margin-left : 400px;
+    margin-left : 200px;
     margin-top: 50px;
 }
 header nav ul
@@ -52,11 +53,11 @@ header nav a
 }
 header nav a:hover
 {
-    border-bottom: 3px solid #601010;
+    border-bottom: 3px solid rgb(255,225,215);
 }
 #actif
 {
-    background-color: rgb(250,250,250);
+    background-color: rgb(255,240,220);
 }
 #canvas
 {
@@ -68,7 +69,7 @@ header nav a:hover
     flex-direction: column;
     color: rgb(255,255,255);
     animation-name: warn;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }

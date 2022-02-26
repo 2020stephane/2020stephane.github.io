@@ -5,61 +5,133 @@
     font-size: larger;
     font-style: normal;
 }
-
-header { 
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+header
+{
     font-family: "bellefonte";
-
-}
-header h1 {
-    text-align: center;
-}
-#warning {
-    color: rgb(255,255,255);
-    animation-name: warn;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-#warning h3{
-    margin-left: 150px;
-}
-@keyframes warn {
-    from {
-     margin-left:50%;
-     color:rgb(255,255,255);}
-    to {
-     margin-left: 0%;
-     color: rgb(0,0,0);}
-}
-header nav ul {
-    display: flex;           /* alignement horizontal */
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
     justify-content: flex-start;
 }
-header nav li {
-    list-style-type: none;     /* enleve les puces */
+header h1
+{
+    width: 300px;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-left : 325px;
+}
+header nav
+{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+header nav ul
+{
+    display: flex;           /* alignement horizontal */
+    list-style-type: none;   /* enleve les puces */
+}
+header nav li
+{
     margin-right: 20px;        /* espace entre menu */
 }
-header nav a {
+header nav a
+{
     font-size: 1.3em;
     color: #181818;
+    padding-bottom: 3px;
     text-decoration: none;     /* pas de decoration */
 }
-header nav a:hover {
-    border-bottom: 3px solid #601010;
+header nav a:hover
+{
+    border-bottom: 3px solid rgb(255,225,215);
+}
+#actif
+{
+    background-color: rgb(255,240,220);
+}
+#entete
+{
+    float:left;
+    border-radius: 10px 10px 10px 10px;  /* hg hd bd bg */
+    box-shadow: 3px 2px 6px red; /*h v degrade color */
+    border: 2px solid red;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#titre
+{
+    height: 100px;
+    padding-top: 50px;
+    margin-left: 600px;
+
+}
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+article, aside
+{
+    text-align: justify;
+}
+article h3
+{
+    text-align: center;
+}
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
 }
 
-#actif{
-    background-color: rgb(250,250,250);
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
 }
-#hautgauche{
-     float: left;
-     border: 2px solid blue;
-     margin-bottom : 50px;
-     margin-top: 10px;
-     margin-left: 10px;
+
+#photo_zozor
+{
+    text-align: center;
 }
-#hautdroite{
-    float: right;
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
 }
 footer{
     display: flex;
