@@ -6,36 +6,41 @@
         <link rel="stylesheet" href="index.css" />
         <title>LE SITE DE STEPHANE</title>
     </head>
-<!-- -->
+
     <body>
-        <!-- -->
-        <header>
-            <h1>la programmation</h1>
-            <h3 id="hautpage"></h3>
-            <nav>
-                <ul>
-                    <li id="actif"><a href="index.html">Accueil</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div id ="bloc_page">
+            <header>
+                <a id="hautpage"></a>
+                <div id="logo">
+                    <img src="images/moon1.jpg" alt="Logo de la lune" />
+                </div>
+                <div>
+                    <h1>La programmation</h1>
+                </div>
+               <nav>
+                    <ul>
+                        <li id="actif"><a href="index.html">Accueil</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
             <div id="canvas">
-                <canvas id="dessin" width="1500" height="200"></canvas>
+                <canvas id="dessin" width="1200" height="200"></canvas>
+                <script src="index3.js" async=""></script>
             </div>
-            <script src="index3.js" async=""></script>
-        </header>
-        <!-- -->
-        <section>
-           <div id="warning">
-               <h3>ATTENTION</h3>
-               <h4>Ce site n'a pas pour but d'apprendre la programmation.</h4>
-               <h4> Il sert de vitrine pour montrer mes acquis en HTML,CSS et Javascript.</h4>
-           </div>
-           <div>
-              <p>La programmation informatique appelé aussi codage représente l’ensemble d’opérations écrites qui seront ensuite exécutées par un ordinateur. Programmer consiste donc à écrire des algorithmes informatiques.
-                L'écriture d'un programme se fait dans un langage de programmation. Un logiciel est un ensemble de programmes (qui peuvent être écrits dans des langages de programmation différents) dédié à la réalisation de certaines tâches par un (ou plusieurs) utilisateurs du logiciel.</p>
-              <p>Ce que vous allez découvrir sur ce site :</p>
-           </div>
+
+            <section>
+                <div id="warning">
+                    <h1>ATTENTION</h1>
+                    <h3>Site de démonstration.</h3>
+                    <h3> Il n'a aucun but pedagogique.</h3>
+                </div>
+                <div>
+                    <p>La programmation informatique appelé aussi codage représente l’ensemble d’opérations écrites qui seront ensuite exécutées par un ordinateur. Programmer consiste donc à écrire des algorithmes informatiques.
+                    L'écriture d'un programme se fait dans un langage de programmation. Un logiciel est un ensemble de programmes (qui peuvent être écrits dans des langages de programmation différents) dédié à la réalisation de certaines tâches par un (ou plusieurs) utilisateurs du logiciel.</p>
+                </div>
            <nav id="menu">
              <ol>
                  <li><a href="#Etape-1-Choisir">Étape 1 : Choix du langage</a></li>
@@ -103,5 +108,6 @@
             <a href="#hautpage">Haut de page</a>
             <h3>&copy;Stéphane Brisse - 2020</h3>
         </footer>
+        </div>
     </body>
 </html>
