@@ -34,14 +34,18 @@ header nav
 {
     margin-left : 200px;
     margin-top: 50px;
+     list-style-type: none;
 }
 header nav ul
 {
-    display: flex;           /* alignement horizontal */
-    list-style-type: none;   /* enleve les puces */
+    display:flex;
+
+    text-decoration: none;
 }
 header nav li
 {
+    list-style-type: none;     /* pas de puce */
+    text-decoration: none;     /* pas de decoration */
     margin-right: 20px;        /* espace entre menu */
 }
 header nav a
@@ -54,6 +58,32 @@ header nav a
 header nav a:hover
 {
     border-bottom: 3px solid rgb(255,225,215);
+}
+#actif
+{
+    background-color: rgb(255,240,220);
+}
+
+header nav ul li
+{
+float:left;
+}
+header nav ul li a
+{
+/*padding: 20px;*/
+}
+header nav ul li ul
+{
+display: none;
+}
+nav ul li:hover ul
+{
+z-index:99999;
+display:list-item !important;
+position:absolute;
+margin-top:0px;
+margin-left:-40px;
+list-style-type: none;
 }
 #actif
 {
@@ -90,8 +120,10 @@ header nav a:hover
 }
 #menu
 {
+     font-size: 0.75em;
+     font-weight: normal;
      float:left;
-     height: 400px;
+     height: 200px;
      border-radius: 10px 10px 10px 10px;  /* hg hd bd bg */
      box-shadow: 3px 2px 6px blue; /*h v degrade color */
      border: 2px solid blue;
