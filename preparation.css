@@ -1,0 +1,56 @@
+@font-face
+{
+    font-family: 'bellefonte';
+    src: url('polices/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-size: larger;
+    font-style: normal;
+}
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+header
+{
+    font-family: "bellefonte";
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: flex-start;
+}
+header h1
+{
+   width: 300px;
+       font-size: 2.5em;
+       font-weight: normal;
+       margin-left : 325px;
+}
+
+#canvas
+{
+    margin-top: 25px;
+}
+footer
+{
+    display: flex;
+    align-items: center;
+   
+}
+footer h3
+{
+    position: absolute;
+    right: 25px;
+}
+#logo_footer img
+{
+    margin-top:10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 30px;
+    height: auto;
+}
