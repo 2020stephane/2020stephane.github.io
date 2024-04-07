@@ -20,21 +20,45 @@ header
 {
     font-family: "bellefonte";
     background: url('images/separateur.png') repeat-x bottom;
-    display: flex;
-    justify-content: flex-start;
 }
 header h1
 {
    width: 300px;
-       font-size: 2.5em;
-       font-weight: normal;
-       margin-left : 325px;
+   font-size: 2.5em;
+   font-weight: normal;
+   margin-left : 325px;
+}
+header nav
+{
+    margin-left : 5px;
+    margin-top: 5px;
+    list-style-type: none;
+}
+header nav ul
+{
+    display:flex;
+    text-decoration: none;
+}
+header nav li
+{
+    list-style-type: none;     /* pas de puce */
+    text-decoration: none;     /* pas de decoration */
+    margin-right: 20px;        /* espace entre menu */
+}
+header nav ul li ul
+{
+display: none;
+}
+nav ul li:hover ul
+{
+z-index:99999;
+display:list-item !important;
+position:absolute;
+margin-top:0px;
+margin-left:-40px;
+list-style-type: none;
 }
 
-#canvas
-{
-    margin-top: 25px;
-}
 footer
 {
     display: flex;
