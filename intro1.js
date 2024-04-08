@@ -334,7 +334,7 @@ function handleKeys() {
                                     if (lastTime != 0) {
                                         var elapsed = timeNow - lastTime;
 
-                                        rPyramid += (90 * elapsed) / 1000.0;
+                                        rPyramid += 2;
                                         rCube -= (75 * elapsed) / 1000.0;
                                     }
                                     lastTime = timeNow;
