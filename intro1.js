@@ -107,6 +107,18 @@ var mvMatrix = mat4.create();
         function handleKeyUp(event) {
             currentlyPressedKeys[event.keyCode] = false;
         }
+        var pitch = 0;
+            var pitchRate = 0;
+
+            var yaw = 0;
+            var yawRate = 0;
+
+            var xPos = 0;
+            var yPos = 0.4;
+            // Update: zPos altered to approximate original scene.
+            var zPos = 0.5;
+
+            var speed = 0;
 function handleKeys() {
         if (currentlyPressedKeys[33]) {
             // Page Up
@@ -130,10 +142,10 @@ function handleKeys() {
 
         if (currentlyPressedKeys[38] || currentlyPressedKeys[87]) {
             // Up cursor key or W
-            speed = 0.003;
+            speed = 0.1;
         } else if (currentlyPressedKeys[40] || currentlyPressedKeys[83]) {
             // Down cursor key
-            speed = -0.003;
+            speed = -0.1;
         } else {
             speed = 0;
         }
@@ -282,6 +294,7 @@ function handleKeys() {
                             cubeVertexIndexBuffer.numItems = 36;
                         }
                         var rPyramid = 0;
+                        var rPyramid2 = 0;
                             var rCube = 0;
 
                             function drawScene() {
@@ -296,7 +309,7 @@ function handleKeys() {
 
                                 mvPushMatrix();
                                 mat4.rotate(mvMatrix, degToRad(rPyramid), [0, 1, 0]);
-
+                         mat4.rotate(mvMatrix, degToRad(rPyramid2), [1, 0, 0]);
                                 gl.bindBuffer(gl.ARRAY_BUFFER, pyramidVertexPositionBuffer);
                                 gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute, pyramidVertexPositionBuffer.itemSize, gl.FLOAT, false, 0, 0);
 
@@ -334,7 +347,8 @@ function handleKeys() {
                                     if (lastTime != 0) {
                                         var elapsed = timeNow - lastTime;
 
-                                        rPyramid += 2;
+                                        rPyramid += yawRate;
+                                        rPyramid2 += speed;
                                         rCube -= (75 * elapsed) / 1000.0;
                                     }
                                     lastTime = timeNow;
