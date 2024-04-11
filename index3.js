@@ -53,7 +53,7 @@ function draw() {
         x = -imgW + x;
       }
       if (x > 0) {
-        tx.drawImage(img, -imgW + x, y, imgW, imgH);
+        ctx.drawImage(img, -imgW + x, y, imgW, imgH);
       }
       if (x - imgW > 0) {
         ctx.drawImage(img, -imgW * 2 + x, y, imgW, imgH);
@@ -68,6 +68,6 @@ function draw() {
       }
     }
     ctx.drawImage(img, x, y,imgW, imgH);
-    x += dx;
+    x -= dx;
 }
     
